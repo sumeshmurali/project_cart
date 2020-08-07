@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <main>
+        <div class="nav">
+          <div class="logo">
+          Project Cart
+          </div>
+        <div class="search">
+          <form action="index" method="GET"><input type="text" class="search" name="search">
+          <input type="submit" id="searchbtn" value="Search">
+        </form>
+          
+        </div>
+        <div class="navbar">
+          <ul>
+            <li class="navbar item">Home</li>
+            <li class="navbar item">Projects</li>
+            <li class="navbar item"> Account</li>
+            <li class="navbar item"><a class="navbar link" href="/register">Register</a></li>
+          </ul>
+        </div>
+        </div>
+    {% block body %}
+    
+    {% endblock %}
+</main>
+</body>
+</html>

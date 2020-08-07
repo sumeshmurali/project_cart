@@ -1,0 +1,142 @@
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: Poppins, 'Sans Serif';
+    background-color: rgb(21, 44, 44);
+}
+
+main{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10% 1fr;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5px;
+    background-color: rgb(29, 58, 58);
+}
+
+.container{
+    display: grid;
+}
+.navbar.link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    
+    color: rgb(28, 186, 235);
+}
+#searchbtn{
+    padding: 12px 20px;
+    margin-left: -6px;
+    background-color:  rgb(24, 172, 218);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+
+}
+#searchbtn:hover{
+    background-color:  rgb(21, 59, 70);
+    border: 1px solid white;
+}
+input[class="search"]{
+    min-width: 100px;
+    width:500px;
+    border: 0px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-width: 0%;
+    border-radius: 5px;
+    background-color: rgb(24, 172, 218);
+
+    
+}
+
+input[class="search"]:focus{
+    background-color: rgb(12, 56, 70);
+    color: white;
+    padding: 11px 20px;
+    border: 1px solid white;
+    
+}
+.navbar.item{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px 20px;
+    list-style-type: none;
+    color: white;
+    background-color:  rgb(24, 172, 218);
+    border-radius: 5px;
+}
+.navbar.item:hover{
+    color: white;
+    background-color:  rgb(12, 56, 70);
+    border: 1px solid;
+    border-color: white;
+}
+.projects{
+    margin-top: 10px;
+    background-color: rgb(37, 79, 92);
+    height: 90vh;
+    border-radius: 5px;
+    overflow: scroll;    
+}
+.project{
+    background-color: orange;
+    margin: 5px;
+    border-radius: 5px;
+  
+}
+.project:hover{
+    background-color: rgb(255, 245, 226);
+    margin: 5px;
+    border-radius: 5px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.details.name{
+    color: rgb(0, 64, 41);
+    padding: 5px;
+    font-weight: bold;
+}
+.details.price{
+    color: rgb(3, 100, 100);
+    font-weight: bold;
+}
+.description{
+    padding-left: 5%;
+    color: white;
+}
+.form{
+    background-color: rgba(57, 85, 107, 0.342);
+    margin: 5% 20%;
+    justify-content: space-evenly;
+
+
+}
+.form-input{
+
+    width: 70%;
+    align-self: center;
+}
+.form-label{
+    
+}
