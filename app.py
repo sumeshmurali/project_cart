@@ -55,7 +55,11 @@ def send_img(path):
 def send_css(path):
     return send_from_directory('static/css', path)
 
+# HANDLING ERRORS
 
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('404.html'), 404
 # SERVING WEBSITE
 
 @app.route("/")
@@ -112,5 +116,7 @@ def account():
 @login_manager.unauthorized_handler
 def unauthorized():
     return redirect('/login')
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
+
