@@ -5,7 +5,8 @@ import flask_login
 db = SQLAlchemy()
 
 
-class User(db.Model, flask_login.UserMixin):
+class User(db.Model,flask_login.UserMixin):
+    __tablename__ = 'users'
     userId = db.Column(db.Integer, primary_key=True, auto_increment=True)
     userFirstName = db.Column(db.String(50),)
     userLastName = db.Column(db.String(50),)
@@ -16,6 +17,11 @@ class User(db.Model, flask_login.UserMixin):
     userIp = db.Column(db.String(50), unique=True)
     userCountry = db.Column(db.String(20),)
     userType = db.Column(db.SmallInteger, default=2)
+    userPassword = db.Column(db.String(500))
 
     def __repr__(self):
-        return '<UserEmail: {}'.format( self.userEmail)
+        return '<UserEmail: {}>'.format( self.userEmail)
+
+class Users(flask_login.UserMixin):
+    # Used for login session purpose
+    pass

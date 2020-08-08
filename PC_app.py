@@ -11,7 +11,7 @@ from datetime import datetime
 # from flaskext.mysql import MySQL
 import pymysql
 
-from project_cart.models import User
+from models import User
 app = Flask(__name__)
 app.secret_key = "test key"
 # mysql = MySQL()

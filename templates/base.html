@@ -23,8 +23,11 @@
           <ul>
             <li class="navbar item">Home</li>
             <li class="navbar item">Projects</li>
-            <li class="navbar item"> Account</li>
-            <li class="navbar item"><a class="navbar link" href="/register">Register</a></li>
+            {% if current_user.is_authenticated %}
+            <li class="navbar item"> <a class="navbar link" href="/account">Account</a></li>
+            {% else %}
+            <li class="navbar item"><a class="navbar link" href="/login">Login/Register</a></li>
+            {% endif %}
           </ul>
         </div>
         </div>
