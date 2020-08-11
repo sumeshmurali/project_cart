@@ -149,6 +149,10 @@ def logout():
 def unauthorized():
     return redirect('/login')
 
+@app.route('/project')
+def projects():
+    return render_template('project.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 
