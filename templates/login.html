@@ -1,11 +1,18 @@
 {% extends 'base.html' %}
-{ {% block body %}
+{% from "_formhelpers.html" import render_field %}
+{% block body %}
 
     Login To Project Cart
-    <form action="/login" method="POST">
-        <input name="email" type="email" id="email" placeholder="Email"> <br>
-        <input name="password" type="password" placeholder="Password"> <br>
-        <input type="submit" value="Login">
-    </form>
+   
+<form method=post>
+  {% if error_msg %}
+  <p style="color: red; background-color:rgb(212, 143, 143); border:1px solid red" >{{error_msg}}</p>
+  {% endif %}
+  <dl>
+    {{ render_field(form.email) }}
+    {{ render_field(form.password) }}
+  </dl>
+  <p><input type=submit value=Register>
+</form>
     if you don't have an account <a href="/register"> Register here</a>
 {% endblock %}}

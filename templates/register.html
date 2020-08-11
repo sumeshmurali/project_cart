@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% from "_formhelpers.html" import render_field %}
 {% block head %}
 <title> Project Cart </title>
 {% endblock %}
@@ -8,16 +8,18 @@
 <div class="container">
     <div>
         <form action="register" method="POST" class="form">
-          <label class="form-label">First Name : </label> <input class="form-input" type="text" name="firstname" required><br>
-          <label class="form-label">Last Name: </label><input class="form-input" type="text" name="lastname" required><br>
-          <label class="form-label">Email: </label> <input class="form-input" type="email" name="email" required><br>
-            <label class="form-label">Phone: </label><select name="country">
-            <option value="IN">IN(+91)</option>
-        </select> <input class="form-input" type="text" name="phone" required><br>
-             <label class="form-label">Password : </label> <input class="form-input" type="password" name="password" required><br>
-            <label class="form-label">Confirm Password: </label><input class="form-input" type="password" name="confirmpassword" required><br>
-          <input type="submit" value="Register">
-         </form>
+          <dl>
+            {{ render_field(form.firstname)}}
+            {{ render_field(form.lastname)}}
+            {{ render_field(form.email) }}
+            {{ render_field(form.phone)}}
+            {{ render_field(form.country)}}
+            {{ render_field(form.password) }}
+            {{ render_field(form.confirm)}}
+            {{ render_field(form.accept_tos)}}
+          </dl>
+          <p><input type=submit value=Register>
+        </form>
     </div>
 </div>
 {% endblock %}

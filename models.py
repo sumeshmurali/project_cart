@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+
 from datetime import datetime
 
 import flask_login
@@ -22,6 +23,18 @@ class User(db.Model,flask_login.UserMixin):
     def __repr__(self):
         return '<UserEmail: {}>'.format( self.userEmail)
 
-class Users(flask_login.UserMixin):
-    # Used for login session purpose
-    pass
+class Admin(db.Model):
+    __tablename__ = "admin"
+
+    adminId = db.Column(db.Integer, primary_key=True, auto_increment=True)
+    userId = db.Column(db.Integer, unique=True)
+    adminPassword = db.Column(db.String(500))
+    adminSecondaryPassword = db.Column(db.String(500))
+    active = db.Column(db.SmallInteger, default=0)
+    loggedIn = db.Column(db.SmallInteger, default=0)
+    currentIP = db.Column(db.String(50), default='127.0.0.1')
+    prevIP = db.Column(db.String(50), default='127.0.0.1')
+    lastLoggedOn = db.Column(db.DATETIME, default=datetime.utcnow)
+
+    def __repr__(self):
+        return '<admin active from {}>'.format(self.currentIP)
