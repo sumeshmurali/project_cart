@@ -25,8 +25,9 @@
         </div>
     </nav>
     <div class="container-md-fluid">
-        <div class="row">
-            <div class="col-lg">
+        <div class="row" id="mainPanel">
+            <div class="col-lg accordion collapse show users" id="userPanel" data-parent="#mainPanel">
+                <div class="collapse show" id="userstab" data-parent="#userPanel">
                 <div class="container-lg-fluid">
                     <table class="table table-striped">
                         <tr>
@@ -60,31 +61,433 @@
                         </tr>
                     </table>
                 </div>
+                </div>
+                <div class="collapse" id="sellerstab" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    Seller 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    Seller 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Seller 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Seller 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="contributorstab" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    Contributor 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    Contributor 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Contributor 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Contributor 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="newSellers" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    New Seller 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    New Seller 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Seller 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Seller 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="newContributors" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    New Contributor 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    New Contributor 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Contributor 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Contributor 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="reportstab" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    Report 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    Report 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Report 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Report 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg accordion collapse projects" id="projectsPanel" data-parent="#mainPanel">
+                <div class="collapse show" id="userstab" data-parent="#userPanel">
+                <div class="container-lg-fluid">
+                    <table class="table table-striped">
+                        <tr>
+                            <td>
+                                user 1
+                            </td>
+                            <td> <a href="#"> approve </a></td>
+                            <td> <a href="#"> reject </a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                user 2
+                            </td>
+                            <td> <a href="#"> approve </a></td>
+                            <td> <a href="#"> reject </a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                user 3
+                            </td>
+                            <td> <a href="#"> approve </a></td>
+                            <td> <a href="#"> reject </a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                user 4
+                            </td>
+                            <td> <a href="#"> approve </a></td>
+                            <td> <a href="#"> reject </a></td>
+                        </tr>
+                    </table>
+                </div>
+                </div>
+                <div class="collapse" id="sellerstab" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    Seller 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    Seller 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Seller 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Seller 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="contributorstab" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    Contributor 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    Contributor 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Contributor 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Contributor 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="newSellers" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    New Seller 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    New Seller 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Seller 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Seller 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="newContributors" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    New Contributor 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    New Contributor 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Contributor 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    New Contributor 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="reportstab" data-parent="#userPanel">
+                    <div class="container-lg-fluid">
+                        <table class="table table-striped">
+                            <tr>
+                                <td>
+                                    Report 1
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>
+                                    Report 2
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Report 3
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Report 4
+                                </td>
+                                <td> <a href="#"> approve </a></td>
+                                <td> <a href="#"> reject </a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg accordion collapse others" id="othersPanel" data-parent="#mainPanel">
+                
+            </div>
+
+            <div class="col-3 accordion" id="sidepanel">
                 <p>
-                    <a class="btn" data-toggle="collapse" href="#users" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn" id="userbtn" data-toggle="collapse" href="#users" role="button" aria-expanded="true" aria-controls="collapseExample" data-target=".users">
                       Users
                     </a>
                   </p>
-                  <div class="collapse" id="users">
+                  <div class="collapse show users" id="users" data-parent="#sidepanel">
                     <p>
                         <ul class="list-group list-group-flush">
-                            <a href="#" class="list-group-item list-group-item-action">Users</a>
-                            <a href="#" class="list-group-item list-group-item-action">Sellers</a>
-                            <a href="#" class="list-group-item list-group-item-action">Contributors</a>
-                            <a href="#" class="list-group-item list-group-item-action">New Sellers Requests</a>
-                            <a href="#" class="list-group-item list-group-item-action">New Contributor Requests</a>
-                            <a href="#" class="list-group-item list-group-item-action">Reports and Abuse</a>
+                            <a href="#userstab" class="btn text-left" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="userstab" data-target="#userstab">Users</a>
+                            <a href="#sellerstab" class="btn text-left collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sellerstab" data-target="#sellerstab">Sellers</a>
+                            <a href="#contributorstab" class="btn text-left collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="contributorstab" data-target="#contributorstab">Contributors</a>
+                            <a href="#newSellers" class="btn text-left collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="newSellers" data-target="#newSellers">New Sellers Requests</a>
+                            <a href="#newContributors" class="btn text-left collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="newContributors" data-target="#newContributors">New Contributor Requests</a>
+                            <a href="#reportstab" class="btn text-left collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="reportstab" data-target="#reportstab">Reports and Abuse</a>
                             </div>
                         </ul>
                     </p>
                 <p>
-                    <a class="btn" data-toggle="collapse" href="#projects" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn collapsed" data-toggle="collapse" href="#projects" role="button" aria-expanded="false" aria-controls="collapseExample" data-target=".projects">
                         Projects
                       </a>
                 </p>
-                <div class="collapse" id="projects" >
+                <div class="collapse projects" id="projects" data-parent="#sidepanel">
                     <ul class="list-group list-group-flush">
                         <a href="#" class="list-group-item list-group-item-action">Projects</a>
                         <a href="#" class="list-group-item list-group-item-action">New Projects</a>
@@ -93,11 +496,11 @@
                     </ul>
                 </div>
                 <p>
-                    <a class="btn" data-toggle="collapse" href="#others" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn collapsed" data-toggle="collapse" href="#others" role="button" aria-expanded="false" aria-controls="collapseExample" data-target=".others">
                         Others
                       </a>
                 </p>
-                <div class="collapse" id="others">
+                <div class="collapse others" id="others" data-parent="#sidepanel">
                     
                 </div>
                 </div>
