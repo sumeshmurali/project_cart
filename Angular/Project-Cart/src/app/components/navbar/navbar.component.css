@@ -1,0 +1,65 @@
+.navbar{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: .9rem;
+	color: rgb(0, 0, 0);
+	letter-spacing: .1rem;
+	width: 100%;
+	box-shadow: 5px 5px 10px #00000023;
+	backdrop-filter: blur(2px);
+	background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.411),
+	rgba(255, 255, 255, 0.3) );
+}
+.navbar-brand{
+	margin-left: 1%;
+	padding-right: 20px;
+}
+.navbar-nav { 
+	margin-left: auto; 
+	padding-left: 15px;
+} 
+.navbar-nav li{
+	padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	padding-top: .8rem;
+}
+.nav-link i{
+	font-size: 20px;
+	font-weight: 500;
+}
+.active{
+	font-weight: bolder;
+    color: rgb(0, 0, 0) !important;
+}
+.dropdown a{
+	cursor: pointer !important;
+}
+.dropdown-menu {
+	top: 55px;
+	background-color: rgba(255, 255, 255, 0.253);
+	backdrop-filter: blur(2px);
+	border-radius: 10px;
+    font-size: small;
+    z-index: 10;
+	border: 0;
+	box-shadow: 5px 5px 10px #00000023;
+}
+.dropdown-menu a{
+	color: rgb(0, 0, 0) !important;
+}
+.dropdown-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+.badge{
+	position:absolute;
+	top:15%;
+	font-size:80%;
+	padding: 5px;
+	border-radius: 50%;
+	color: rgb(0, 0, 0);
+	background:rgba(0, 255, 13, 0.85);
+	text-align:center;
+  }

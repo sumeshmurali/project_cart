@@ -1,0 +1,39 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	color: rgb(0, 0, 0);
+	overflow-x: hidden;
+	background-color: #ffffff;
+	background: linear-gradient(to right, #35dabb, #44e0f8);	
+    height: auto;
+	width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-style: none;
+	letter-spacing: 0px;
+}
+h1{
+	color: rgb(255, 255, 255);
+	font-size: 60px;
+	letter-spacing: .2rem;
+	font-weight: 1000px;
+}
+h3{
+	color: rgb(255, 255, 255);
+	letter-spacing: .05rem;
+}
+p{
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0.2px;
+}
+.btn{
+  border-radius: 30px;
+}

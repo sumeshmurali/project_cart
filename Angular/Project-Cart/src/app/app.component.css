@@ -1,0 +1,6 @@
+.right{
+    float: right;
+}
+.router-outlet{
+    overflow: hidden;
+}
