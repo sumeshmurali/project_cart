@@ -1,0 +1,46 @@
+<section id="contact">
+    <div class="container contact">
+    
+      <form #contactForm="ngForm" class="contact-form" (ngSubmit)="submit(contactForm)">
+        <input 
+          type="text" 
+          class="contact-form-text animated bounceInRight" 
+          placeholder="Name" 
+          name="name" 
+          required 
+          ngModel 
+          #name="ngModel">
+        <div *ngIf="name.touched && name.invalid" class="alert alert-danger">Name is required</div>
+        <input 
+          type="email" 
+          class="contact-form-text animated bounceInRight second" 
+          placeholder="Email" 
+          ngModel 
+          #email="ngModel" 
+          name="email">
+        <input 
+          type="text" 
+          class="contact-form-text animated bounceInRight third" 
+          placeholder="Phone" 
+          required 
+          ngModel 
+          #phone="ngModel" 
+          name="phone">
+        <div *ngIf="phone.touched && phone.invalid" class="alert alert-danger">Phone number is missing</div>
+        <textarea 
+          class="contact-form-text animated bounceInRight fourth" 
+          placeholder="Message" 
+          ngModel 
+          #message="ngModel" 
+          name="message" 
+          required>
+        </textarea>
+        <div *ngIf="message.touched && message.invalid" class="alert alert-danger">You must type a message</div>
+        <button 
+          id="submit" 
+          type="submit" 
+          class="contact-form-btn animated bounceInRight fifth" 
+          name="submit">Send Message</button>
+      </form>
+    </div>
+    </section>

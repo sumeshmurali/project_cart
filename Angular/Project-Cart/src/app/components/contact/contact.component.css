@@ -1,0 +1,60 @@
+#contact {
+	height: 100vh;
+}
+.contact{
+  margin-top: 5%;
+  }
+  .contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 30px 30px;
+	overflow: hidden;
+  }
+  .contact-form-text{
+  display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 16px 0;
+	border: 0;
+	background: rgba(255, 255, 255, 0.267);
+	padding: 20px 40px;
+	outline: none;
+  color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  box-shadow: 4px 10px 10px rgba(0,0,0,0.2);
+  }
+  ::placeholder{
+    color: rgb(58, 56, 56);
+  }
+  .alert-danger{
+    border-radius: 1rem;
+    background: rgba(255, 0, 0, 0.137);
+    border: solid red;
+    color:black;
+  }
+  textarea.contact-form-text{
+	resize: none;
+	height: 120px;
+  }
+  .contact-form-btn{
+  float: right;
+	border: 0;
+	background: rgba(255, 255, 255, 0.267);
+	color: rgb(0, 0, 0);
+	padding: 6px 30px;
+	border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 4px 10px 10px rgba(0,0,0,0.2);
+  }
+  .second{
+    animation-delay: .4s;
+  }
+  .third{
+    animation-delay: .6s;
+  }
+  .fourth{
+    animation-delay: .8s;
+  }
+  .fifth{
+    animation-delay: 1s;
+  }

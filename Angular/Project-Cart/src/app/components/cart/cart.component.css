@@ -1,0 +1,14 @@
+.container{
+    padding-top: 80px;
+}
+.heading{
+    font-size: 80px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.count{
+    color: rgb(248, 87, 114);
+}
+h4{
+    color: white;
+}
